@@ -13,8 +13,8 @@ module.exports = {
     proxyTable: {
       '/api/jjl0924': {
         // target: 'http://10.10.11.65:8004/',
-        target: 'http://10.10.11.34:8067/',
-        // target: 'http://134.175.20.178:8067/',
+        // target: 'http://10.10.11.34:8067/',
+        target: 'http://134.175.20.178:8067/',
         changeOrigin: true,
         ws: true,
         pathRewrite: {

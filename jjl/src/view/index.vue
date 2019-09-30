@@ -6,7 +6,7 @@
     <van-button class="submit_btn" type="default" round @click="$router.push('/info')">点击领取</van-button>
     <div class="tips">
       <p>网贷有风险 出借需谨慎</p>
-      <p>本活动最终解释权归成都融证通互联网信息服务有限公司所有</p>
+      <!-- <p>本活动最终解释权归成都融证通互联网信息服务有限公司所有</p> -->
     </div>
   </div>
 </template>
@@ -45,8 +45,8 @@
 
     .banner {
       padding-top: 105px;
-      width: 686px;
-      height: 551px;
+      width: 745px;
+      height: 437px;
 
       img {
         width: 100%;

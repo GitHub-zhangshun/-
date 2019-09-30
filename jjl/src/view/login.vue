@@ -22,7 +22,7 @@
     <van-button class="submit_btn" type="default" round :loading="login_loading" @click="login">确定</van-button>
     <div class="tips">
       <p>网贷有风险 出借需谨慎</p>
-      <p>本活动最终解释权归成都融证通互联网信息服务有限公司所有</p>
+      <!-- <p>本活动最终解释权归成都融证通互联网信息服务有限公司所有</p> -->
     </div>
   </div>
 </template>
@@ -121,6 +121,11 @@
       },
       login() {
         if (this.testPhone() || this.testCode()) {
+          Notify({
+            type: 'danger',
+            message: '请输入正确的手机号和验证码',
+            duration: 2000
+          })
           return
         }
         this.login_loading = true
@@ -169,8 +174,8 @@
 
     .banner {
       padding-top: 60px;
-      width: 686px;
-      height: 551px;
+      width: 745px;
+      height: 437px;
 
       img {
         width: 100%;
@@ -179,7 +184,7 @@
     }
 
     .form {
-      padding-top: 56px;
+      padding-top: 140px;
 
       .phone {
         display: flex;

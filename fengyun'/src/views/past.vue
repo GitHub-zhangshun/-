@@ -73,7 +73,7 @@
         rankingList: [],
         showDate:false,
         currentDate: new Date(),
-        minDate: new Date(2019,8,9),   //修改为9月9号
+        minDate: new Date(2019,8,29),   //修改为9月9号
         maxDate: '',  //当天减一天
         selectedDate:'', //选择的时间
         Date:'',  //传后台时间
@@ -128,7 +128,7 @@
         })
       },
       toShowDate(){
-        if(this.formatDate(new Date(),'yyyyMMdd') !== '20190909' && this.formatDate(new Date(),'yyyyMMdd') !== '20190908'){
+        if(this.formatDate(new Date(),'yyyyMMdd') !== '20190929' && this.formatDate(new Date(),'yyyyMMdd') !== '20190928'){
           this.showDate = true
         }
       }

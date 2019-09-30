@@ -13,7 +13,7 @@
     </div>
     <div class="tip">
       <span>网贷有风险&nbsp;出借需谨慎</span><br>
-      <span>本活动最终解释权归成都融证通互联网信息服务有限公司所有</span>
+      <!-- <span>本活动最终解释权归成都融证通互联网信息服务有限公司所有</span> -->
     </div>
   </div>
 </template>
@@ -48,9 +48,10 @@
     .banner{
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       img{
-        width: 750px;
+        width: 635px;
       }
     }
   
